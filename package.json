@@ -24,7 +24,7 @@
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
     "@mui/styles": "latest",
-    "axios": "latest",
+    "axios": "^0.26.0",
     "clsx": "latest",
     "date-fns": "latest",
     "loglevel": "latest",
@@ -35,13 +35,20 @@
     "react-router-dom": "latest",
     "react-scripts": "latest",
     "validate.js": "latest",
-    "web-vitals": "latest"
+    "web-vitals": "latest",
+    "zustand": "^3.7.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "latest",
     "@testing-library/react": "latest",
     "@testing-library/user-event": "latest",
-    "prettier": "latest"
+    "css-loader": "^6.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "latest",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -51,15 +58,6 @@
     "lint": "node_modules/.bin/eslint --ext js src",
     "format": "node_modules/.bin/prettier src --write",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "globals": {
-      "log": "readonly"
-    }
   },
   "browserslist": {
     "production": [
